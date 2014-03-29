@@ -40,7 +40,10 @@ if __name__ == "__main__":
                 result = result + str(user[u][vec[i]]) + ","
             else:
                 result = result + "0,"
-        print result[:-1]
+        if result[-1] == "\t":
+            print result
+        else:
+            print result[:-1]
             
 
 
