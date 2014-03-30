@@ -25,9 +25,9 @@ def choose_top(k,i,data):
     return ret[0:k]
 
 if __name__ == "__main__":
-    threshold = 2
+    threshold = 5
     #3 means choose the one the user see and try to buy
-    k = 5
+    k = 1
     #choose the top 5 best likelihood person
     brand = []
     temp = {}
@@ -60,6 +60,9 @@ if __name__ == "__main__":
             for n in range(len(data[j])):
                 if data[j][n] > threshold:
                     result = result + brand[n] + ","
-        print result[:-1]
+        if(result[-1]) == "\t":
+            print result
+        else:
+            print result[:-1]
 
 
