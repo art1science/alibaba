@@ -9,7 +9,7 @@ def weight(type):
 
 if __name__ == "__main__":
     user = {}
-    f = open("good.csv")
+    f = open("trick.csv")
     for line in f.readlines():
         temp = string.split(line.strip(), ",")
         if user.has_key(temp[0]):
@@ -35,15 +35,17 @@ if __name__ == "__main__":
         result = u + ","
         for i in range(len(vec)):
             if user[u].has_key(vec[i]):
-                #if u == "4025000":
-                #    print i
+                if u == "8949750":
+                    print i
                 result = result + str(user[u][vec[i]]) + ","
             else:
                 result = result + "0,"
+        '''
         if result[-1] == "\t":
             print result
         else:
             print result[:-1]
+            '''
             
 
 
