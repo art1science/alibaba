@@ -7,7 +7,9 @@ def weight(type):
     if type == "3":
         return int(type) + 100
     elif type == "2":
-        return int(type) + 50
+        return 1 
+    elif type == "1":
+        return 1
     else:
         return int(type)+1
 
