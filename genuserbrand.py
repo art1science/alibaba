@@ -4,7 +4,12 @@
 import string
 
 def weight(type):
-    return int(type)+1
+    if type == "3":
+        return int(type) + 100
+    elif type == "2":
+        return int(type) + 50
+    else:
+        return int(type)+1
 
 
 if __name__ == "__main__":
@@ -35,17 +40,15 @@ if __name__ == "__main__":
         result = u + ","
         for i in range(len(vec)):
             if user[u].has_key(vec[i]):
-                if u == "8949750":
-                    print i
+                #if u == "8949750":
+                #    print i
                 result = result + str(user[u][vec[i]]) + ","
             else:
                 result = result + "0,"
-        '''
         if result[-1] == "\t":
             print result
         else:
             print result[:-1]
-            '''
             
 
 

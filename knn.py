@@ -30,7 +30,7 @@ def choose_itself(k,i,data):
     return ret
 
 if __name__ == "__main__":
-    threshold = 3
+    threshold = 7
     #3 means choose the one the user see and try to buy
     k = 1
     #choose the top 5 best likelihood person
